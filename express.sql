@@ -59,12 +59,6 @@ WHERE NOT EXISTS (
     SELECT 1 FROM usuarios WHERE correo = 'carlos@gmail.com'
 );
 
-INSERT INTO usuarios (nombre, correo, telefono)
-SELECT 'Maria', 'maria@gmail.com', '3204567890'
-WHERE NOT EXISTS (
-    SELECT 1 FROM usuarios WHERE correo = 'maria@gmail.com'
-);
-
 -- CONSULTAR PRODUCTOS
 SELECT * FROM productos;
 
